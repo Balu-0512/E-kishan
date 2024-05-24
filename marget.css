@@ -1,0 +1,76 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img.freepik.com/premium-photo/onion-green-shallots-market-stall-catania-sicily-italy_501761-1358.jpg?w=900);
+
+}
+section {
+  border: 1px solid #242020;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: rgba(178,190,181,0.6);
+}
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+  }
+  
+  /* Main styles */
+  main {
+    margin: 20px;
+  }
+  
+  section {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #07090b;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 1060px;
+    width: 100%;
+}
+#collapseExample1,#collapseExample,#collapseExample2,#collapseExample3{
+  max-height: 500px;
+  overflow-y: scroll;
+  scroll-behavior: auto;
+  
+}

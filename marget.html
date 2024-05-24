@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Market Info for Farmers</title>
+    <link rel="stylesheet" href="./marget.css"
+
+  </head>
+  <body>
+    <script src="./marget.js"></script>
+    <header>
+      <h1>Farmers' Helper App</h1>
+        <nav>
+            <ul>
+               <li><a href="homepage.php">హోమ్</a></li>
+                <li><a href="crops.html">పంటలు</a></li>
+                <li><a href="weather/index.html">వాతావరణం</a></li>
+                <li><a href="marget.html">మార్కెట్ సమాచారం</a></li>
+                <!-- <li><a href="#">Agricultural Loans</a></li> -->
+                <li><a href="croping.html">వ్యవసాయ సామగ్రి అద్దె</a></li>
+                <li><a href="login.php">నిష్క్రమించండి</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <section>
+        <h2>మార్కెట్ ధరలు</h2>
+        <p i></p>
+        <p>మీ పంట పేరును నమోదు చేయండి మరియు తాజా మార్కెట్ ధరలను పొందండి:</p>
+        <form action="display_prices.php" method="POST">
+          <label for="crop-name">పంట పేరు:</label>
+
+          <!-- <input type="text" id="crop-name" name="crop-name" required> -->
+          <select id="crop" name="crop">
+            <option value="corn">మొక్కజొన్న </option>
+            <option value="wheat">గోధుమ </option>
+            <option value="paddy">వరి</option>
+            <option value="potatoes">బంగాళదుంపలు</option>
+          </select>
+          <input type="date" name="date">
+          <button type="submit">ధరలు పొందండి</button>
+        </form>
+     
+          <div id="prices">
+             <?php include 'display_prices.php'; ?>
+        </div>
+      </section>
+      <section>
+        <h2>మార్కెట్ ట్రెండ్</h2>
+        <p>తాజా మార్కెట్ ట్రెండ్‌లను వీక్షించండి: </p>
+        <ul>
+          <li><a href="crops.html">పంట వివరాలు</a></li>
+          <li><a href="weather/index.html">వాతావరణ సూచన</a></li>
+          <li><a href="croping.html">వ్యవసాయ సామగ్రి అద్దె</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Market Info for Farmers</p>
+    </footer>
+  </body>
+</html>

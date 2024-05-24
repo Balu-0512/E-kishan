@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Forecast for Farmers</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+   
+  <header>
+    <h1>Farmers' Helper App</h1>
+        <nav>
+            <ul>
+              <li><a href="homepage.html">Home</a></li>
+              <li><a href="./crops.html">Crops</a></li>
+              <li><a href="weather.html">Weather</a></li>
+              <li><a href="marget.html">Market Info</a></li>
+              <li><a href="#">Agricultural Loans</a></li>
+              <li><a href="croping.html">Farm Equipment Rental</a></li>
+              <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+  </header>
+    
+  
+  <main>
+    <h2>Weather Forecast for Farmers</h2>
+    <p>Enter your location to get the weather forecast:</p>
+    <form>
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+      <button type="submit">Get Forecast</button>
+    </form>
+    <div id="forecast"></div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Weather Forecast for Farmers</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="key.js"></script>
+</body>
+</html>

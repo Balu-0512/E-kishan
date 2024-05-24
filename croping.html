@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Farm Equipment Rental for Farmers</title>
+	<link rel="stylesheet" href="croping_css.css">
+</head>
+<body>
+    <header>
+        <h1>Farmers' Helper App</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.php">హోమ్</a></li>
+                <li><a href="crops.html">పంటలు</a></li>
+                <li><a href="weather/index.html">వాతావరణం</a></li>
+                <li><a href="marget.html">మార్కెట్ సమాచారం</a></li>
+                <!-- <li><a href="#">Agricultural Loans</a></li> -->
+                <li><a href="croping.html">వ్యవసాయ సామగ్రి అద్దె</a></li>
+                <li><a href="login.php">నిష్క్రమించండి</a></li>
+            </ul>
+        </nav>
+    </header>
+	<!-- <header>
+		<h1>Farm Equipment Rental for Farmers</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#services">Our Services</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header> -->
+	<main>
+		<section id="about">
+			<h2>మా గురించి</h2>
+			<p>మేము స్థానిక ప్రాంతంలోని రైతులకు అధిక-నాణ్యత, నమ్మదగిన పరికరాలను అందించడంలో ప్రత్యేకత కలిగిన వ్యవసాయ పరికరాల అద్దె సంస్థ. మా నిపుణుల బృందం మా కస్టమర్‌లకు సాధ్యమైనంత ఉత్తమమైన సేవను అందించడానికి అంకితం చేయబడింది మరియు రైతులు వారి కార్యకలాపాలలో విజయం సాధించడంలో సహాయపడటానికి మేము కట్టుబడి ఉన్నాము.</p>
+		</section>
+		<section id="services">
+			<h2>మా సేవలు</h2>
+			<ul>
+				<li>ట్రాక్టర్ అద్దె</li>
+				<li>నాగలి అద్దె</li>
+				<li>కల్టివేటర్ అద్దె</li>
+				<li>హర్వెస్టర్ అద్దె</li>
+				<li>సీడర్ అద్దె</li>
+				<li>స్ప్రేయర్ అద్దె</li>
+			</ul>
+			<p>మా అద్దె రేట్లు పోటీగా ఉన్నాయి మరియు వివిధ పరికరాల అవసరాలతో రైతుల అవసరాలను తీర్చడానికి మేము సౌకర్యవంతమైన అద్దె నిబంధనలను అందిస్తున్నాము.</p>
+		</section>
+		<section id="contact">
+			<h2>సంప్రదించండి</h2>
+			<p>మీరు మా నుండి పరికరాలను అద్దెకు తీసుకోవాలని ఆసక్తి కలిగి ఉంటే, దయచేసి దిగువ ఫారమ్‌ను పూరించండి:</p>
+			 <form action="cropping_conn.php" method="post">
+				<label for="name">పేరు:</label>
+				<input type="text" id="name" name="name" required>
+                <br><br>
+				<!-- <label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+                <br><br> -->
+				<label for="phone">ఫోను నంబరు:</label>
+				<input type="tel" id="phone" name="phone" required>
+                <br><br>
+				<label for="equipment">సామగ్రి అవసరం:</label>
+				<select id="equipment" name="equipment">
+					<option value="tractor">ట్రాక్టర్</option>
+					<option value="plow">నాగలి</option>
+					<option value="cultivator">కల్టివేటర్</option>
+					<option value="harvester">హర్వెస్టర్</option>
+					<option value="seeder">సీడర్</option>
+					<option value="sprayer">స్ప్రేయర్</option>
+				</select>
+                <br><br>
+				<label for="date">కావాల్సిన తేదీ:</label>
+                
+				<input type="date" id="date" name="date" required>
+                <br><br>
+				<label for="message">సందేశం:</label>
+                <br><br>
+				<textarea id="message" name="message"></textarea>
+                <br><br>
+				<input type="submit" value="Submit" background-color:#45a049>
+                <br><br>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Farm Equipment Rental for Farmers. All rights reserved.</p>
+	</footer>
+</body>
+</html>
